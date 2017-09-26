@@ -12,7 +12,7 @@ class PaperBoy
   end
 
   def deliver(start_address, end_address)
-    delivered = end_address - start_address
+    delivered = end_address - start_address + 1
     over_quota = delivered - @quota
     if delivered < 0
       p "The end address should be greater than the start address"
